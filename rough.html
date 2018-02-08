@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Bootstrap 101 Template</title>
+
+<link rel="stylesheet" href="css/style.css" />
+
+<script
+  src="https://code.jquery.com/jquery-3.1.1.min.js"
+  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+  crossorigin="anonymous"></script>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.6/components/card.min.css"/>
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="//tinymce.cachefly.net/4.0/tinymce.min.js"></script>
+</head>
+<body>
+    <div id="navbar-wrapper" class="container">
+<nav style="padding-right:10px;" class="navbar navbar-fixed-top navbar-inverse">
+      
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="home.php">HMS</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="addpost.php"><span class = "glyphicon glyphicon-user"></span> &nbsp Patients</a></li>
+            <li><a href="doctor.php"><span class = "glyphicon glyphicon-info-sign"></span> &nbsp Doctors</a></li>
+            <li><a href="employees.php"><span class = "glyphicon glyphicon-wrench"></span> &nbspManage Employees</a></li>
+            <li><a href="billing.php"><span class = "glyphicon glyphicon-list-alt"></span> &nbspBilling</a></li>
+            <li><a href="salary.php"><span class = "glyphicon glyphicon-usd"></span> &nbspSalary</a></li>
+            <li><a href="newapp.php"><span class = "glyphicon glyphicon-plus"></span> &nbspAdd Appointment</a></li>
+            <li><a href="viewapp.php"><span class = "glyphicon glyphicon-eye-open"></span> &nbspView Appointments</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#"><span class="glyphicon glyphicon-user"></span>&nbsp; <?php echo $userRow['username']; ?></a></li>
+            <li><a href="logout.php?logout"><span class="glyphicon glyphicon-log-out"></span>&nbsp; Logout</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      
+    </nav>
+    </div>
+</body>
+</html>
